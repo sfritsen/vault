@@ -1,0 +1,206 @@
+/** Fonts
+******************************************************************************/
+@font-face {
+    font-family: "OpenSans";
+    src: url("../../resources/fonts/OpenSans/OpenSans-Regular.eot");
+    src: url("../../resources/fonts/OpenSans/OpenSans-Regular.eot?#iefix") format('eot'),
+         url("../../resources/fonts/OpenSans/OpenSans-Regular.woff") format('woff'),
+         url("../../resources/fonts/OpenSans/OpenSans-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url("../../resources/fonts/OpenSans/OpenSans-Semibold.eot");
+    src: url("../../resources/fonts/OpenSans/OpenSans-Semibold.eot?#iefix") format('eot'),
+         url("../../resources/fonts/OpenSans/OpenSans-Semibold.woff") format('woff'),
+         url("../../resources/fonts/OpenSans/OpenSans-Semibold.ttf") format('truetype');
+    font-weight: bold;
+}
+
+/** General tags
+******************************************************************************/
+html {
+   font-size: 14px;
+}
+body {
+    font-family: 'OpenSans', 'Arial';
+    font-weight: normal;
+    background-color: #212121;
+    color: #C0C0C0;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+a:link, a:visited, a:active {
+    color: #BADA55;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+.error_text {
+    font-weight: bold;
+    color: orangered;
+}
+
+/** Structure
+******************************************************************************/
+main[role="centered"] {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+main[role="centered"] .app_title {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: #F5F5F5;
+}
+main[role="centered"] .app_logo i {
+    display: block;
+    font-size: 4rem;
+    color: #BADA55;
+}
+main[role="app"] {
+    margin: 60px 8px 12px 8px;
+}
+
+/** Navbar
+******************************************************************************/
+nav.navbar {
+    background-color: #1B1B1B;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: lighter;
+}
+nav .navbar-brand {
+    text-transform: uppercase;
+    width: 100px;
+    color: #f5f5f5;
+}
+nav .navbar-brand i {
+    color: #BADA55;
+}
+nav .nav_link {
+    margin-right: 20px;
+}
+
+/** Modals
+******************************************************************************/
+.modal .modal-content {
+    background-color: #212121;
+    border: 2px solid #BADA55;
+}
+.modal .modal-header {
+    background-color: #1B1B1B;
+    border-bottom: 1px solid black;
+}
+.modal .modal-footer {
+    border: 0;
+}
+
+/** Bootstrap Dropdowns
+******************************************************************************/
+.dropdown-menu {
+    background-color: #333;
+    border: 1px solid #BADA55;
+    color: #f5f5f5;
+}
+.dropdown-menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+/** Forms and inputs
+******************************************************************************/
+.form_block {
+    margin-bottom: 12px;
+}
+/* Change Autocomplete styles in Chrome*/
+.form-control:-webkit-autofill,
+.form-control:-webkit-autofill:hover, 
+.form-control:-webkit-autofill:focus {
+  border: 1px solid #333;
+  -webkit-text-fill-color: #f5f5f5;
+  -webkit-box-shadow: 0 0 0px 1000px #212121 inset;
+  box-shadow: 0 0 0px 1000px #212121 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  padding: 6px;
+}
+/* Override the bootstrap 4 outline */
+.form-control:focus, .form-control:hover, .form-control:active,
+.custom-control-input:focus ~ .custom-control-label::before,
+.btn:focus, .btn:active {
+    box-shadow: 0 0 0 1px #BADA55 !important;
+    border: 1px solid #BADA55 !important;
+}
+.form-control, .btn {
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 4px 4px 4px 0;
+}
+.form-control, .form-control:focus {
+    background-color: #212121;
+    border: 1px solid #585858;
+    color: #f5f5f5;
+}
+.input_lg {
+    width: 500px;
+}
+label {
+    margin-bottom: 0 !important;
+}
+.btn {
+    background-color: #353535;
+    border: 1px solid #585858;
+    color: #f5f5f5;
+    min-width: 170px;
+}
+.btn:hover {
+    background-color: #BADA55;
+    border: 1px solid #000;
+    color: #212121;
+}
+.required_field {
+    font-weight: bold;
+    color: orangered;
+    margin-right: 4px;
+}
+
+/** Tables
+******************************************************************************/
+.table_data thead th {
+    background-color: #242424;
+    border: 0;
+    border-bottom: 1px solid #000;
+    color: #8B8B8B;
+    font-size: 0.8rem;
+    text-transform: uppercase
+}
+.table_data tbody td {
+    border-bottom: 1px solid #000;
+}
+.table_data {
+    color: #C0C0C0;
+}
+.table_data tbody tr:nth-child(even) {background-color: #242424;}
+.table_data tbody tr:nth-child(odd) {background-color: #212121;}
+.table_data tbody i {
+    color: #9D9D9D;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.table_data.hover_table tbody tr:hover, .table_data.hover_table tbody tr:hover i {
+	background-color: #BADA55; 
+	color: #212121;
+}
+.table_data.hover_table tbody tr a {
+	color: #BADA55;
+}
+.table_data.hover_table tbody tr:hover a, .table_data.hover_table tbody a:hover {
+	color: #212121;
+}
