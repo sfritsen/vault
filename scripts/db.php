@@ -1,5 +1,5 @@
 <?php
 $dbhost = 'localhost';
-$dbuser = 'username';
-$dbpass = 'password';
+$dbuser = 'vault_user';
+$dbpass = 'vault_password';
 $dbname = 'vault';
