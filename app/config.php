@@ -1,5 +1,5 @@
 <?php
 
-define('ROOT_DIR', '/webtools/vault');
+define('ROOT_DIR', '/vault');
 
 ?>

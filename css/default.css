@@ -1,28 +1,10 @@
-/** Fonts
-******************************************************************************/
-@font-face {
-    font-family: "OpenSans";
-    src: url("../../resources/fonts/OpenSans/OpenSans-Regular.eot");
-    src: url("../../resources/fonts/OpenSans/OpenSans-Regular.eot?#iefix") format('eot'),
-         url("../../resources/fonts/OpenSans/OpenSans-Regular.woff") format('woff'),
-         url("../../resources/fonts/OpenSans/OpenSans-Regular.ttf") format('truetype');
-}
-@font-face {
-    font-family: "OpenSans";
-    src: url("../../resources/fonts/OpenSans/OpenSans-Semibold.eot");
-    src: url("../../resources/fonts/OpenSans/OpenSans-Semibold.eot?#iefix") format('eot'),
-         url("../../resources/fonts/OpenSans/OpenSans-Semibold.woff") format('woff'),
-         url("../../resources/fonts/OpenSans/OpenSans-Semibold.ttf") format('truetype');
-    font-weight: bold;
-}
-
 /** General tags
 ******************************************************************************/
 html {
    font-size: 14px;
 }
 body {
-    font-family: 'OpenSans', 'Arial';
+    font-family: 'Open Sans', 'Arial';
     font-weight: normal;
     background-color: #212121;
     color: #C0C0C0;
